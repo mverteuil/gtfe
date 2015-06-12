@@ -26,7 +26,7 @@ class PyTest(TestCommand):
 setup(
     name='gtfe',
     packages=find_packages(),
-    version='1.1',
+    version='1.1.2',
     description='Get the number of seconds since the Unix epoch for a given datetime.',
     author='Matthew de Verteuil, Jason Peddle, Liav Koren, Ben Webber',
     author_email='onceuponajooks@gmail.com',
