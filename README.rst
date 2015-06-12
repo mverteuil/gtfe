@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/mverteuil/gtfe.svg?branch=master
+    :target: https://travis-ci.org/mverteuil/gtfe
+
 installation
 ------------
 
@@ -17,3 +20,4 @@ testing
 
 - Clone the repository
 - `python setup.py test`
+
