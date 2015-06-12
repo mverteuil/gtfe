@@ -42,6 +42,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Internet'
+        'Topic :: Internet',
     ],
 )
