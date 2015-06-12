@@ -5,5 +5,5 @@ python:
     - "3.2"
     - "3.3"
     - "3.4"
-    - "nightly"
+    - "pypy"
 script: "python setup.py test"
