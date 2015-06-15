@@ -1,7 +1,7 @@
 #!/usr/bin/python
-import sys
 from setuptools import setup, find_packages
 from setuptools.command.test import test as TestCommand
+import sys
 
 
 class PyTest(TestCommand):
@@ -17,7 +17,7 @@ class PyTest(TestCommand):
         self.test_suite = True
 
     def run_tests(self):
-        #import here, cause outside the eggs aren't loaded
+        # import here, cause outside the eggs aren't loaded
         import pytest
         errno = pytest.main(self.pytest_args)
         sys.exit(errno)
@@ -26,7 +26,7 @@ class PyTest(TestCommand):
 setup(
     name='gtfe',
     packages=find_packages(),
-    version='1.2',
+    version='1.2.1',
     description='Get the number of seconds since the Unix epoch for a given datetime.',
     author='Matthew de Verteuil, Jason Peddle, Liav Koren, Ben Webber',
     author_email='onceuponajooks@gmail.com',
@@ -35,13 +35,19 @@ setup(
     license='MIT',
     install_requires=['python-dateutil'],
     tests_require=['pytest'],
-    cmdclass = {'test': PyTest},
+    cmdclass={'test': PyTest},
     long_description=open('README.rst', 'r').read().strip(),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
-        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: Implementation :: PyPy',
         'Topic :: Internet',
+        'Topic :: Software Development :: Libraries :: Python Modules',
     ],
 )
