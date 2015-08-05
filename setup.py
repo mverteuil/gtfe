@@ -34,7 +34,7 @@ setup(
     keywords='epoch datetime time timezone',
     license='MIT',
     install_requires=['python-dateutil'],
-    tests_require=['pytest', 'pytest-cov'],
+    tests_require=['pytest-cov', 'pytest', ],
     cmdclass={'test': PyTest},
     long_description=open('README.rst', 'r').read().strip(),
     classifiers=[
